@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chesu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+    </div>
+
+    <div class="container">
+        <div class="left-panel">
+            <h1 class="logo">Chesu</h1>
+            <button id="sidebar-open" class="btn btn-secondary" style="margin-bottom: 20px;">⚙️ Open Game Controls &amp; Analytics</button>
+            <div id="board" class="chessboard"></div>
+        </div>
+
+        <div id="sidebar" class="right-panel closed">
+            <button id="sidebar-close" class="btn btn-secondary" style="margin-bottom: 20px;">&times; Close Panel</button>
+
+            <!-- Game Controls -->
+            <div class="glass-panel controls-panel">
+                <h2>Game Controls</h2>
+                <div class="button-group">
+                    <button id="btn-reset" class="btn btn-secondary">New Game</button>
+                    <button id="btn-force-ai" class="btn btn-primary">Force AI Move</button>
+                </div>
+            </div>
+
+            <!-- AI Analytics Dashboard -->
+            <div class="glass-panel analytics-panel">
+                <h2>AI Analytics Dashboard</h2>
+                <div id="status-indicator" class="status-indicator">Your Turn (White)</div>
+
+                <!-- AI current strategy display -->
+                <div class="strategy-box" id="strategy-box">
+                    <span class="strategy-label">AI STRATEGY</span>
+                    <span class="strategy-value" id="stat-algo">Waiting…</span>
+                    <span class="strategy-reason" id="stat-reason">—</span>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Last Move</div>
+                        <div id="stat-move" class="stat-value">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Eval Score</div>
+                        <div id="stat-score" class="stat-value highlight">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Nodes Explored</div>
+                        <div id="stat-nodes" class="stat-value code-font">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Branches Pruned</div>
+                        <div id="stat-pruned" class="stat-value code-font">-</div>
+                    </div>
+                    <div class="stat-item full-width">
+                        <div class="stat-label">Time Taken</div>
+                        <div id="stat-time" class="stat-value highlight">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Over Panel -->
+            <div id="game-over-modal" class="hidden glass-panel game-over-panel">
+                <h2 id="game-over-text">Game Over</h2>
+                <p id="game-over-subtext"></p>
+                <button id="btn-reset-modal" class="btn btn-primary" style="margin-top: 16px;">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

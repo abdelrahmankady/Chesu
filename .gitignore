@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code (keep launch.json and settings.json since they define how to run the project)
+# .vscode/
+
+# Testing / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Logs
+*.log
+uvicorn.log
