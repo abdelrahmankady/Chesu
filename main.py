@@ -11,7 +11,7 @@ def main():
     # Ensure we're running from the project root
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    print("♟️  Starting Chesu...")
+    print("Starting Chesu...")
     print("   Open your browser at: http://127.0.0.1:8004\n")
 
     subprocess.run([

@@ -1,10 +1,10 @@
-# ♟️ Chesu — Chess AI
+# Chesu — Chess AI
 
 A web-based chess application featuring **Minimax** and **Alpha-Beta Pruning** search algorithms, a fully interactive browser interface, and a real-time analytics dashboard.
 
 ---
 
-## 🎯 Overview
+## Overview
 
 Chesu is a playable chess game where the AI opponent **adaptively selects its own search algorithm** based on the current game phase:
 
@@ -18,7 +18,7 @@ Every AI move is fully transparent — the analytics dashboard shows which algor
 
 ---
 
-## 🧠 Algorithms
+## Algorithms
 
 ### Minimax (Depth 2)
 A complete brute-force tree search. Explores every possible move to a given depth, assuming the opponent always plays optimally. No pruning applied.
@@ -46,7 +46,7 @@ The static evaluation function scores positions from White's perspective:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 Chesu/
@@ -70,7 +70,7 @@ Chesu/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.9+
@@ -100,11 +100,11 @@ http://127.0.0.1:8004
 
 ---
 
-## 🎮 How to Play
+## How to Play
 
 1. **Make your move** — click a white piece, then click the destination square (valid squares highlight in blue)
 2. **Watch the AI respond** — the AI automatically picks its algorithm based on the game phase and moves within ~1 second
-3. **Open the panel** — click **"⚙️ Open Game Controls & Analytics"** to see the AI Analytics Dashboard
+3. **Open the panel** — click **"Open Game Controls & Analytics"** to see the AI Analytics Dashboard
 4. **Read the stats** — after each AI move the dashboard shows:
    - **AI Strategy** — which algorithm was chosen and why
    - **Last Move** — the move played in standard chess notation
@@ -116,7 +116,7 @@ http://127.0.0.1:8004
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -127,7 +127,7 @@ http://127.0.0.1:8004
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -139,6 +139,6 @@ http://127.0.0.1:8004
 
 ---
 
-## 📄 License
+## License
 
 MIT — free to use and modify.

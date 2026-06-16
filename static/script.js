@@ -230,8 +230,8 @@ async function resetGame() {
 function showGameOver(result) {
     gameOverPanel.classList.remove('hidden');
     let msg = `Result: ${result}`;
-    if      (result === '1-0')     msg = '♔ White wins!';
-    else if (result === '0-1')     msg = '♚ Black wins!';
+    if      (result === '1-0')     msg = 'White wins!';
+    else if (result === '0-1')     msg = 'Black wins!';
     else if (result === '1/2-1/2') msg = 'Draw!';
     document.getElementById('game-over-subtext').innerText = msg;
     statusIndicator.className = 'status-indicator';
